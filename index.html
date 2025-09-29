@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="./img/CILKGax.png" />
+  <title>Happy birthday</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <style>
+    /* Thêm một số CSS cơ bản nếu chưa có */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fdf6f0;
+      text-align: center;
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .btn {
+      padding: 12px 24px;
+      font-size: 16px;
+      text-decoration: none;
+      color: white;
+      background-color: #ff69b4;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+      width: 80%;
+      max-width: 300px;
+      box-sizing: border-box;
+    }
+
+    .btn:hover {
+      background-color: #ff85c1;
+    }
+
+    .cover {
+      width: 90%;
+      max-width: 500px;
+      height: auto;
+      border-radius: 12px;
+      margin: 20px auto;
+      display: block;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    audio {
+      display: none;
+    }
+
+    @media (min-width: 600px) {
+      .buttons {
+        flex-direction: row;
+        justify-content: center;
+      }
+
+      .btn {
+        width: auto;
+      }
+    }
+  </style>
+</head>
+<body class="page__main">
+
+  <div class="buttons">
+    <a href="index.html" class="btn btn-bir">Bật nhạc</a>
+    <a href="timeline.html" class="btn btn-timeline">Dòng thời gian</a>
+    <a href="gallery.html" class="btn btn-gallery">Ảnh kĩ niệm</a>
+  </div>
+
+  <img
+    src="https://scontent.fhan2-3.fna.fbcdn.net/v/t1.15752-9/553586001_1608184996823561_5017618318861797116_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeETjW98Z7AGwkFMP6pk-2PeNq2rD9GkQ4w2rasP0aRDjFY3m0330rdBgJYTx2H6Vnjwd9P5J5OtI2GlV_SVaK-0&_nc_ohc=ZUDTCaCXI-UQ7kNvwG3oA9-&_nc_oc=AdlOaZ7tszlSOlyGSUsUOU-hsKDy4620LCXXt_EWvEu6kLve4RuF0Gt8JzTGHL5tIe0&_nc_zt=23&_nc_ht=scontent.fhan2-3.fna&oh=03_Q7cD3QHoRFYbDbyN-u2USNQgJxUtYoFznZMLL6wos50wDG-VqA&oe=69023B12"
+    alt="Ảnh kỷ niệm"
+    class="cover"
+  />
+
+  <audio id="player" autoplay loop>
+    <source src="./music/music.mp3" type="audio/mp3" />
+  </audio>
+
+</body>
+</html>
